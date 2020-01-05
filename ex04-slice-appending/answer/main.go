@@ -11,7 +11,7 @@ func main() {
 	celsiusValues := make([]float32, 0, len(fahrenheitValues))
 
 	for _, f := range fahrenheitValues {
-		_ = append(celsiusValues, toCelsius(f))
+		celsiusValues = append(celsiusValues, toCelsius(f))
 	}
 
 	fmt.Println("Fahrenheit", fahrenheitValues)
